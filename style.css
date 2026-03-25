@@ -109,8 +109,8 @@ body.open.done {
 .header-logo img {
     max-width: none;
     max-height: none;
-    width: 135px;
-    height: 135px;
+    width: 175px;
+    height: 175px;
 }
 
 .site-content {
@@ -128,11 +128,13 @@ body.open.done {
 
 h1.entry-title.page-title {
     font-family: "EB Garamond", serif;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 60px;
-    font-size: 47px;
+    font-size: 43px;
     line-height: 120%;
     padding: 0;
+    color: #262626;
+    letter-spacing: -1.5px;
 }
 
 .animate {
