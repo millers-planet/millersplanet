@@ -22,6 +22,7 @@ version 1.1
     1. 3rd Part CSS Libraries
 ====================================== */
 
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap");
 @import url("css/clear.css");
 @import url("css/sm-clean.css");
 @import url("css/swiper.min.css");
@@ -42,8 +43,8 @@ body {
     font-size: 16px;
     line-height: 36px;
     font-weight: 400;
-    color: #ffffff;
-    background-color: #000;
+    color: #262626;
+    background-color: #fffcf2;
     overflow-x: hidden;
 }
 
@@ -55,7 +56,7 @@ body.page-background {
 
 body a {
     text-decoration: none;
-    color: #ffffff;
+    color: #262626;
     transition: color .2s ease;
 }
 
@@ -86,13 +87,14 @@ body.open.done {
 }
 
 .doc-loader {
+    display: none;
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     z-index: 99999;
-    background-color: #000;
+    background-color: #fffcf2;
 }
 
 .doc-loader img {
@@ -125,7 +127,7 @@ body.open.done {
 }
 
 h1.entry-title.page-title {
-    font-family: 'Unna', serif;
+    font-family: "EB Garamond", serif;
     font-weight: 700;
     margin-bottom: 60px;
     font-size: 47px;
@@ -190,7 +192,7 @@ a.socail-text {
 }
 
 a.button {
-    background-color: #000;
+    background-color: #fffcf2;
     padding: 8px 0px 8px 11px;
     display: inline-block;
     font-size: 11px;
@@ -255,7 +257,7 @@ a.button:hover {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: red;
+    background-color: #C1440E;
     z-index: -1;
     transition: .3s;
 }
@@ -278,7 +280,7 @@ a.button:hover {
 #toggle:after {
     content: '';
     height: 2px;
-    width: 0;
+    width: 36px;
     background: #4d4d4d;
     left: 17px;
     position: absolute;
@@ -293,7 +295,7 @@ a.button:hover {
 
 #toggle.on:before {
     transform: rotate3d(0, 0, 1, 45deg) translate3d(0, 0, 0);
-    background-color: #fff;
+    background-color: #fffcf2;
     margin-left: 5px;
     margin-top: -2px;
     width: 26px !important;
@@ -302,7 +304,7 @@ a.button:hover {
 
 #toggle.on:after {
     transform: rotate3d(0, 0, 1, -45deg);
-    background-color: #fff;
+    background-color: #fffcf2;
     margin-left: 5px !important;
     margin-top: -2px;
     width: 26px !important;
@@ -311,10 +313,11 @@ a.button:hover {
 
 #toggle:after { 
     transform: translate3d(0, 8px, 0);
+    width: 30px;
 }
 
 #toggle .menu-line {
-    width: 0;
+    width: 20px;
     height: 2px;
     background: #4d4d4d;
     left: 17px;
@@ -386,8 +389,8 @@ span.menu-num {
 .sm-clean a:hover, 
 .sm-clean a:focus, 
 .sm-clean a:active {
-    font-family: 'Unna', serif;
-    color: #fff;
+    font-family: "EB Garamond", serif;
+    color: #000;
     padding: 5px 0;
     font-size: 42px;
     line-height: 110%;
@@ -395,26 +398,17 @@ span.menu-num {
 }
 
 .sm-clean > li > a:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 15px;
-    background-color: #333333;
-    transition: width .3s;
-    position: absolute;
-    left: -5%;
-    bottom: 8px;
-    z-index: -1;
+    display: none;
 }
 
 .sm-clean a.current:after, 
 .sm-clean a:hover:after, 
 .sm-clean ul a:hover:after {
-    width: 110%;
+    display: none;
 }
 
 .sm-clean a.current {
-    color: #ff0000;    
+    color: #C1440E;    
 }
 
 .sm-clean a span.sub-arrow {
@@ -452,13 +446,13 @@ span.menu-num {
 .sm-clean .sub-menu li a.current, 
 .sm-clean .children li a:hover, 
 .sm-clean .children li a.current {
-    color: #fff;
+    color: #000;
 }
 
 .menu-holder-back {
     width: 100%;
     position: fixed;
-    background-color: #000;    
+    background-color: #fffcf2;    
     background-image: url("images/lines.png");  
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -602,7 +596,7 @@ a.social-text {
 
 .grid-item .entry-holder {
     text-align: center;
-    background-color: #fff;
+    background-color: #000;
     padding: 50px 20px;
 }
 
@@ -620,7 +614,7 @@ a.social-text {
 }
 
 .portfolio-text-holder {
-    color: white;
+    color: #000;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -668,7 +662,7 @@ li.timeline-event {
 }
 
 li.timeline-event:hover {
-    color: #fff;
+    color: #000;
 }
 
 li.timeline-event:before {
@@ -717,7 +711,7 @@ span.timeline-circle:before {
     position: absolute;
     left: -100px;
     top: 2px;
-    color: #fff;
+    color: #000;
     transition: .3s;
 }
 
@@ -788,12 +782,12 @@ li.timeline-event:hover .timeline-event-date {
     width: 100%;
     max-width: 740px;
     justify-content: space-around;
-    background-color: #fff;
+    background-color: #000;
     color: #000;
 }
 
 .blog-item-holder h2.entry-title {
-    font-family: 'Unna', serif;
+    font-family: "EB Garamond", serif;
     font-weight: 700;
     font-size: 47px;
     line-height: 120%;
@@ -840,7 +834,7 @@ li.timeline-event:hover .timeline-event-date {
 }
 
 .single-post .post-info-wrapper .entry-info a:hover {
-    color: #fff;
+    color: #000;
 }
 
 .single-post .post-info-wrapper .entry-info > div {
@@ -853,7 +847,7 @@ li.timeline-event:hover .timeline-event-date {
 
 .single-post .post-info-wrapper .text-holder {
     font-size: 10px;
-    color: #fff;
+    color: #000;
     letter-spacing: 3px;
     margin-bottom: 0;
     line-height: 15px;
@@ -861,7 +855,7 @@ li.timeline-event:hover .timeline-event-date {
 }
 
 .single-post h1.entry-title {
-    font-family: "Unna", serif;
+    font-family: "EB Garamond", serif;
     font-weight: 700;
     font-size: 47px;
     line-height: 120%;
@@ -943,8 +937,8 @@ li.timeline-event:hover .timeline-event-date {
 }
 
 .tags-holder a:hover {   
-    color: #fff;
-    border-color: #fff;
+    color: #000;
+    border-color: #000;
 }
 
 
@@ -1059,7 +1053,7 @@ footer {
 }
 
 .footer-content a:hover {
-    color: #fff;
+    color: #000;
 }
 
 .footer-logo img {

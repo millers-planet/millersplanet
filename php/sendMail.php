@@ -1,6 +1,6 @@
 <?php
 
-include_once (dirname(dirname(__FILE__)) . '/config.php');
+$email = 'hello@millersplanet.co.uk';
 
 //Initial response is NULL
 $response = null;
