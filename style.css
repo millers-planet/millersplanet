@@ -213,6 +213,36 @@ a.button:hover {
     margin-bottom: 80px;
 }
 
+/* About page: image left, text right */
+.about-image-text-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.about-half-image {
+    width: 50%;
+    flex-shrink: 0;
+    display: block;
+}
+
+.about-text-column {
+    flex: 1;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 767px) {
+    .about-image-text-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-half-image {
+        width: 100%;
+    }
+}
+
 
 /* ===================================
     3. Menu CSS
