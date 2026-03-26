@@ -75,7 +75,7 @@ body.open.done {
 }
 
 .site-wrapper {
-    overflow: hidden;
+    overflow: clip;
 }
 
 .site-wrapper img {
